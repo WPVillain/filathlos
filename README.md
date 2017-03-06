@@ -3,11 +3,15 @@
 Filathlos Sports Lovers WordPress Theme based on Sage 9 and Bootstrap 4, Bedrock Boilerplate, Trellis WordPress Stack
 
 ##Sage 9
+Sage 9 Starters theme based so really state of the art with the latest techniques
 
-##Boostrap 4
+##Bootstrap 4
+Bootstrap 4 CSS Framework. Though in beta working really well. Bootstrap menu added already.
 
-#Bedrock
+##Bedrock
+Bedrock WordPress boilerplate with better file structure, security
 
-#Trellis
+##Trellis
+Trellis Modern LEMP WordPress stack with provisioning, deploying.
 
 ##WooCommerce 2.7
