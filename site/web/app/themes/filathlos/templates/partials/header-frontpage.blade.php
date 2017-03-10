@@ -19,7 +19,7 @@
   </div>
   <div class="container-fluid b4-slider">
     <!-- Carousel -->
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:100%;">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin: auto;">
       <!-- Indicators -->
       <?php $the_slides_query_ol = new WP_Query('post_type=slider&showposts=3'); ?>
           <?php if ( $the_slides_query_ol->have_posts() ) : ?>
@@ -40,8 +40,8 @@
                 <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full', 'title' => 'Feature image']); //the_post_thumbnail( 'full' ); ?>
                 <?php endif; ?>
                   <!-- Static Header -->
-                    <div class="header-text hidden-xs">
-                        <div class="col-md-12 text-center">
+                    <div class="header-text carousel-caption hidden-xs">
+                        <div class="col-md-3 pull-left">
                             <h2>
                                 <?php if (get_the_title()) {?>
                                 <span><?php the_title(); ?></span>
