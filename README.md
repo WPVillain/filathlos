@@ -15,3 +15,4 @@ Bedrock WordPress boilerplate with better file structure, security
 Trellis Modern LEMP WordPress stack with provisioning, deploying.
 
 ##WooCommerce 2.7
+WooCommerce 2.7 is supported and does work with dummy data from the WooCommerce plugin. Styling and adding of footer and header data is still in progress.
