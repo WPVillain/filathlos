@@ -19,7 +19,7 @@
   </div>
   <div class="container-fluid b4-slider">
     <!-- Carousel -->
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin: auto;">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <?php $the_slides_query_ol = new WP_Query('post_type=slider&showposts=3'); ?>
           <?php if ( $the_slides_query_ol->have_posts() ) : ?>
