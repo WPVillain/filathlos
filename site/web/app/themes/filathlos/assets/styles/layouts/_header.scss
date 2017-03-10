@@ -1,3 +1,20 @@
+/* -------------------------------------------------
+*
+* Hamburger Menu
+*
+* ------------------------------------------------*/
+@media (min-width: 0px) and (max-width: 991px) {
+    header .container {
+        margin-top: 20px;
+    }
+}
+
+/* -------------------------------------------------
+*
+* Navigation
+*
+* ------------------------------------------------*/
+
 .banner .nav li {
   @extend .nav-item;
 }
@@ -22,6 +39,22 @@
 .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
     color: #cc0056;
 }
+
+a.nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 36px;
+    margin-left: 30px;
+    color: rgba(20,27,43,0.4);
+    margin-top: 36px;
+}
+
+/* -------------------------------------------------
+*
+* Logo
+*
+* ------------------------------------------------*/
 
 a.navbar-brand {
     float: none;
@@ -61,15 +94,6 @@ a.navbar-brand {
     border-bottom-left-radius: 0px;
 }
 
-a.nav-link {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 13px;
-    margin-bottom: 36px;
-    margin-left: 30px;
-    color: rgba(20,27,43,0.4);
-    margin-top: 36px;
-}
 
 /* -------------------------------------------------
 *
