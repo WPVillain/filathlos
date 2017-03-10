@@ -15,9 +15,6 @@
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right']) !!}
         @endif
       </div>
-      <form class="form-inline">
-        <button class="btn btn-outline-success" type="button">Main button</button>
-    </form>
     </nav>
   </div>
 </header>
