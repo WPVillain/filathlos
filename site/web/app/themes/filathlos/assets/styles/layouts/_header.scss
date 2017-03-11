@@ -15,6 +15,12 @@
 *
 * ------------------------------------------------*/
 
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .banner .nav a, 
+.banner .nav .navbar-light .navbar-nav a {
+    color: rgba(19, 26, 42, 0.4);
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
