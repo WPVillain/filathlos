@@ -2,15 +2,10 @@
   <div class="container">
     <div class="row">
 	    <div class="col-md-4">
-		     @php(dynamic_sidebar('sidebar-footer'))
+		     @php(dynamic_sidebar('sidebar-footer-left'))
 		</div>
 	    <div class="col-md-4">
-		    <ul>  
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-			</ul>
+		    @php(dynamic_sidebar('sidebar-footer-middle'))
 	  </div>
 	  <div class="col-md-4">
 		    <ul>  
