@@ -8,12 +8,7 @@
 		    @php(dynamic_sidebar('sidebar-footer-middle'))
 	  </div>
 	  <div class="col-md-4">
-		    <ul>  
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-			</ul>
+		   @php(dynamic_sidebar('sidebar-footer-right'))
 	  </div>
 	</div>
 </footer>
