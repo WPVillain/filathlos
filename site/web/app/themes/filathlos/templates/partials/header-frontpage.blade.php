@@ -41,7 +41,7 @@
                 <?php endif; ?>
                   <!-- Static Header -->
                     <div class="header-text carousel-caption hidden-xs">
-                        <div class="col-md-3 pull-left">
+                        <div class="col-md-4 pull-left">
                             <h2>
                                 <?php if (get_the_title()) {?>
                                 <span><?php the_title(); ?></span>
