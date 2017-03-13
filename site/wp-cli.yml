@@ -1,1 +1,7 @@
 path: web/wp
+
+@production:
+  ssh: ubuntu@filathlos.imagewize.com/srv/www/filathlos.imagewize.com/current
+
+@development:
+  ssh: vagrant@filathlos.dev/srv/www/filathlos.imagewize.com/current
