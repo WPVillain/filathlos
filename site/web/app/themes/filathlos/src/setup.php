@@ -56,6 +56,8 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
 
+    add_image_size( 'b4-slider', 2000, 1500);
+
     /**
      * Enable HTML5 markup support
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
