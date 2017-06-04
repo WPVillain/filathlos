@@ -152,6 +152,12 @@ add_action('after_setup_theme', function () {
 });
 
 /**
+ * Enable WooCommerce Support in Theme
+ * @link https://docs.woocommerce.com/document/third-party-custom-theme-compatibility/
+ */
+ add_theme_support('woocommerce');
+ 
+/**
  * Init config
  */
 sage()->bindIf('config', Config::class, true);
