@@ -33,6 +33,43 @@ add_filter('excerpt_more', function () {
     return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 });
 
+add_filter('wc_get_template_part', function ($template, $slug, $name) {
+
+    $bladeTemplate = false;
+
+    // Look in yourtheme/slug-name.blade.php and yourtheme/woocommerce/slug-name.blade.php
+    if ( $name && ! WC_TEMPLATE_DEBUG_MODE ) {
+        $bladeTemplate = locate_template( array( "{$slug}-{$name}.blade.php", WC()->template_path() . "{$slug}-{$name}.blade.php" ) );
+    }
+
+    // If template file doesn't exist, look in yourtheme/slug.blade.php and yourtheme/woocommerce/slug.blade.php
+    if ( ! $template && ! WC_TEMPLATE_DEBUG_MODE ) {
+        $bladeTemplate = locate_template( array( "{$slug}.blade.php", WC()->template_path() . "{$slug}.blade.php" ) );
+    }
+
+    if ($bladeTemplate) {
+        echo template($bladeTemplate);
+
+        // Return a blank file to make WooCommerce happy
+        return get_theme_file_path('index.php');
+    }
+
+    return $template;
+}, PHP_INT_MAX, 3);
+
+
+add_filter('wc_get_template', function($located, $template_name, $args, $template_path, $default_path) {
+  
+    $bladeTemplateName = str_replace('.php', '.blade.php', $template_name);
+    $bladeTemplate = locate_template( array($bladeTemplateName, WC()->template_path() . $bladeTemplateName ) );
+
+    if ($bladeTemplate) {
+        return template_path($bladeTemplate, $args);
+    }
+
+    return $located;
+}, PHP_INT_MAX, 5);
+
 /**
  * Template Hierarchy should search for .blade.php files
  */
