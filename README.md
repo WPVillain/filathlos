@@ -14,5 +14,5 @@ Bedrock WordPress boilerplate with better file structure, security through bette
 ## Trellis
 Trellis Modern LEMP WordPress stack with provisioning, deploying and git version control.
 
-##WooCommerce 3.0.7
+## WooCommerce 3.0.7
 WooCommerce 3.0.7 is supported and does work with dummy data from the WooCommerce plugin. Styling and adding of footer and header data is still in progress. We are now using the Blade templating engine for The WooCommerce's implementation.
